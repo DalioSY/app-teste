@@ -1,0 +1,33 @@
+#server
+app-server/node_modules
+app-server/.env
+
+#web
+app-web/node_modules
+
+# Logs
+app-web/*.log
+app-web/logs
+app-web/npm-debug.log*
+app-web/yarn-debug.log*
+app-web/yarn-error.log*
+app-web/pnpm-debug.log*
+app-web/lerna-debug.log*
+
+app-web/node_modules
+app-web/dist
+app-web/dist-ssr
+app-web/*.local
+
+# Editor directories and files
+app-web/.vscode/*
+app-web/!.vscode/extensions.json
+app-web/.idea
+app-web/.DS_Store
+app-web/*.suo
+app-web/*.ntvs*
+app-web/*.njsproj
+app-web/*.sln
+app-web/*.sw?
+
+
