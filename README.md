@@ -31,17 +31,12 @@ Aqui estão algumas imagens do projeto:
 
 ## Funcionalidades
 
-- Listagem de Pedidos: A aplicação permite visualizar uma lista completa de todos os pedidos realizados, exibindo informações como:
-
-- Foto do produto: Uma imagem representativa de cada item pedido.
-  Quantidade: O número de unidades solicitadas para cada produto.
-
-- Preço: O valor unitário e o valor total de cada pedido.
-  Criação de Novos Pedidos: A aplicação possibilita aos usuários adicionar novos pedidos de forma intuitiva, permitindo que escolham os produtos desejados, especifiquem as quantidades e visualizem o valor total do pedido antes de confirmá-lo.
-
-- Edição de Pedidos: A aplicação oferece a flexibilidade de editar pedidos já existentes, permitindo que os usuários alterem informações como a quantidade de produtos, caso necessário.
-
-- Exclusão de Pedidos: A aplicação permite que os usuários excluam pedidos que não sejam mais necessários, garantindo a organização e limpeza dos dados.
+- Listagem de Pedidos
+- Foto do produto
+- Preço
+- Criação de Novos Pedidos
+- Edição de Pedidos
+- Exclusão de Pedidos
 
 ## Tecnologias Utilizadas
 
