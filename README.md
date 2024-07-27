@@ -69,9 +69,9 @@ Aqui estão algumas imagens do projeto:
 
    &
 
-```bash
-  cd app-web
-```
+   ```bash
+   cd app-web
+   ```
 
 3. Instale as dependências no app-server e no app-web:
 
@@ -79,13 +79,54 @@ Aqui estão algumas imagens do projeto:
    npm install
    ```
 
-4. Crie um arquivo .env-example na raiz do projeto app-server e adicione a chave da API de filmes:
+4. No arquivo .env-example na raiz do projeto app-server:
 
    ```bash
    MONGODB_API_KEY
    ```
 
-### Executando o Projeto
+#### 4.1. Criar um Cluster no MongoDB Atlas
+
+1. Acesse o site [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) e faça login ou crie uma conta.
+2. Crie um novo projeto se necessário.
+3. Crie um novo cluster. Escolha as configurações de acordo com suas necessidades (tipo de nuvem, região, etc.).
+
+#### 4.2. Configurar Usuário e Senha
+
+1. No MongoDB Atlas, vá para a seção **Database Access**.
+2. Adicione um novo usuário clicando em **Add New Database User**.
+3. Defina um nome de usuário e senha. Tome nota dessas informações, pois serão usadas na string de conexão.
+
+#### 4.3. Obter a String de Conexão
+
+1. No MongoDB Atlas, vá para a seção **Clusters**.
+2. Clique no botão **Connect** no seu cluster.
+3. Selecione **Connect Your Application**.
+4. Copie a string de conexão fornecida. Ela terá o seguinte formato:
+
+   ```plaintext
+   mongodb+srv://<username>:<password>@users.tcnbh7v.mongodb.net/Test?retryWrites=true&w=majority
+   ```
+
+#### 4.4. Atualizar a String de Conexão
+
+Substitua <username> e <password> pelas informações corretas:
+
+- <username>: seu nome de usuário do banco de dados.
+- <password>: sua senha do banco de dados.
+
+#### 4.5. Armazenar a String de Conexão com Segurança
+
+Para manter sua string de conexão segura, é recomendado armazená-la em um arquivo .env (ou variáveis de ambiente) e usar um pacote como dotenv para carregá-la.
+
+Exemplo de como tem que ficar o arquivo .env:
+Lembrando para renomear o arquivo .env-exempla para .env
+
+```plaintext
+MONGODB_API_KEY ="mongodb+srv://<username>:<password>@users.tcnbh7v.mongodb.net/Test?retryWrites=true&w=majority"
+```
+
+### 5. Executando o Projeto
 
 1. Inicie o servidor de desenvolvimento nos dois projetos:
 
