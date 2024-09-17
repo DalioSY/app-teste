@@ -5,9 +5,15 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { SideNav } from '@/components/side-nav';
 import { Header } from '@/components/header';
 
-const poppins = localFont({
-  src: '../fonts/Poppins-Medium.otf',
-  variable: '--font-poppins',
+const geistSans = localFont({
+  src: './fonts/GeistVF.woff',
+  variable: '--font-geist-sans',
+  weight: '100 900',
+});
+const geistMono = localFont({
+  src: './fonts/GeistMonoVF.woff',
+  variable: '--font-geist-mono',
+  weight: '100 900',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${poppins.variable} selection:antialiased ml-16 mt-28 bg-backgroundlayout`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:antialiased ml-16 mt-28 bg-backgroundlayout`}
       >
         <ThemeProvider
           attribute='class'

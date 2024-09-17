@@ -8,7 +8,7 @@ import {
   Settings,
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { Dark } from './dark';
+import { DarkMode } from './dark-mode';
 
 export function Header() {
   const navigation = usePathname();
@@ -35,7 +35,7 @@ export function Header() {
         }`}
       >
         <NotebookText className='h-6 w-9 my-2 h' />
-        <h1>Product</h1>
+        <h1>Produtos</h1>
       </div>
       <div
         className={`flex items-center ${navigation === '/box' ? '' : 'hidden'}`}
@@ -59,7 +59,7 @@ export function Header() {
         <AlignJustify className='h-6 w-9 my-2' />
         <h1>Burger</h1>
       </div>
-      <Dark />
+      <DarkMode />
     </header>
   );
 }

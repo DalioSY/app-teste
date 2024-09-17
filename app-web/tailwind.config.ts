@@ -52,10 +52,6 @@ const config: Config = {
           '5': 'var(--chart-5)',
         },
       },
-      fontFamily: {
-        sans: ['var(--font-poppins)'],
-      },
-
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
