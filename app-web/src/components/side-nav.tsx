@@ -16,7 +16,7 @@ export function SideNav() {
   const navigation = usePathname();
 
   return (
-    <aside className='h-screen w-16 fixed left-0 top-0 z-20 flex flex-col items-center gap-4 bg-background'>
+    <aside className='h-screen w-16 fixed left-0 top-0 z-20 flex flex-col items-center gap-4 bg-background max-sm:hidden'>
       <Image src={logo} alt='logo' className='w-12 h-14 m-3' />
       <div className='flex flex-col items-center gap-4'>
         <Link

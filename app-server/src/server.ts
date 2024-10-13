@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 import { upload } from './config/multer';
 
 const prisma = new PrismaClient();
-const PORT = 4000;
+const PORT = 3333;
 
 const app = express();
 

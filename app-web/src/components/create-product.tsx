@@ -83,15 +83,23 @@ export function CreateProduct() {
             </Link>
           </div>
           <div className=' p-8 flex flex-row gap-8 border-y-2 '>
-            <div className='h-[271px] w-[250px] flex items-end justify-center rounded  bg-[#d9d9d9] '>
-              <Button
-                name='file'
-                className=' h-8 w-full flex items-center justify-center gap-2 rounded text-white bg-[#7557E9] '
-              >
-                <Upload />
-                Selecione um arquivo
-              </Button>
-            </div>
+            <FormField
+              control={form.control}
+              name='file'
+              render={({ field }) => (
+                <FormItem className='h-[271px] w-[250px] flex items-end justify-center rounded  bg-[#d9d9d9] '>
+                  <FormControl>
+                    <Button
+                      {...field}
+                      className=' h-8 w-full flex items-center justify-center gap-2 rounded text-white bg-[#7557E9] '
+                    >
+                      <Upload />
+                      Selecione um arquivo
+                    </Button>
+                  </FormControl>
+                </FormItem>
+              )}
+            />
             <div className=' container flex flex-col gap-2 '>
               <FormField
                 control={form.control}

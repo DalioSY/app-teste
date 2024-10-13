@@ -14,7 +14,7 @@ export function Header() {
   const navigation = usePathname();
 
   return (
-    <header className='w-screen h-16 fixed left-0 top-0 z-20 flex items-center justify-between bg-gradient-to-r text-white from-[#7658EA] to-[#5C46B2] pl-28 pr-4'>
+    <header className='w-screen h-16 fixed left-0 top-0 z-20 flex items-center justify-between bg-gradient-to-r text-white from-[#7658EA] to-[#5C46B2] pl-28 pr-4 max-sm:pl-12 max-sm:h-[137px] max-sm:items-end max-sm:rounded-b-xl max-sm:pb-6'>
       <div
         className={`flex items-center ${navigation === '/' ? '' : 'hidden'}`}
       >
@@ -59,7 +59,9 @@ export function Header() {
         <AlignJustify className='h-6 w-9 my-2' />
         <h1>Burger</h1>
       </div>
-      <DarkMode />
+      <div className='max-sm:hidden'>
+        <DarkMode />
+      </div>
     </header>
   );
 }
